@@ -1,14 +1,9 @@
 <?php
 	
-	ini_set("session.cookie_httponly", 1);
-    session_start();
+	session_start();
 	if( @$_POST["Search"] ){
 		$Result = $_POST["Search"];
 	}
-	$Result = addslashes(@$_POST["Search"]);
-	$Result = htmlentities(@$_POST["Search"]);
-	$Result = htmlspecialchars(@$_POST["Search"]);
-	$Result = strip_tags(@$_POST["Search"]);
 	
 ?>
 <html>
